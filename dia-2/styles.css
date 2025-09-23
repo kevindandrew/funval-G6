@@ -1,0 +1,29 @@
+/* h1 {
+  escribo todos los estilos para el h1 
+}
+.supertitulo {
+  escribo todos los estilos para los elementos con clase  supertitulo
+  p
+  
+}
+#pepito {
+   escribo todos los estilos para el elemento con id pepito
+  p
+  
+}
+ */
+body {
+  background-color: rgb(2, 2, 42);
+  color: white;
+}
+#titulo-principal {
+  color: rgb(5, 179, 66);
+}
+.titulo-6 {
+  font-size: 25px;
+  background-color: blueviolet;
+  color: white;
+}
+.supertitulo {
+  color: red;
+}
