@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .divsito {
+  border: 2px red solid;
+}
+.spansito {
+  border: 2px red solid;
+  font-weight: bold;
+  color: red;
+}
+.sect {
+  border: 2px red solid;
+}
+.noticia {
+  border: 2px red solid;
+}
+.menu {
+  border: 2px red solid;
+}
+ */
+body {
+  height: 100vh;
+  color: white;
+}
+.cabecera {
+  background-color: red;
+  color: white;
+  height: 10%;
+}
+.nave {
+  background-color: blue;
+  color: white;
+  height: 10%;
+}
+.contenedor {
+  height: 70%;
+  display: flex;
+}
+.asi {
+  background-color: blueviolet;
+  width: 30%;
+}
+.principal {
+  background-color: brown;
+  width: 70%;
+}
+.pie {
+  background-color: darkblue;
+  height: 10%;
+}
+.kevin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
