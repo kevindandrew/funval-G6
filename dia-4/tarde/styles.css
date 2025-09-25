@@ -4,16 +4,22 @@
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+}
+header {
+  height: 100px;
+  width: 100%;
+  background-color: blueviolet;
+  position: fixed;
+  z-index: 50;
 }
 .container-cajas {
   border: 2px red solid;
   height: 600px;
   width: 200px;
   position: relative;
+  margin-top: 150px;
 }
 .caja {
   height: 100px;
