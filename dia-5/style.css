@@ -12,14 +12,25 @@ body {
 .contenedor-padre {
   border: 2px red solid;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 8px;
   height: 200px;
-  width: 200px;
 }
 .hijo {
   background-color: blueviolet;
   color: white;
   height: 30px;
   width: 50px;
+}
+.caja1 {
+  order: 2;
+}
+.caja2 {
+  order: 3;
+}
+.caja3 {
+  order: 1;
 }
