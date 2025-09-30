@@ -16,6 +16,7 @@
     --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-amber-950: oklch(27.9% 0.077 45.635);
     --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-900: oklch(39.3% 0.095 152.535);
     --color-cyan-300: oklch(86.5% 0.127 207.078);
     --color-cyan-500: oklch(71.5% 0.143 215.221);
     --color-cyan-600: oklch(60.9% 0.126 221.723);
@@ -226,6 +227,9 @@
     width: calc(var(--spacing) * 16);
     height: calc(var(--spacing) * 16);
   }
+  .h-87 {
+    height: calc(var(--spacing) * 87);
+  }
   .h-\[6\%\] {
     height: 6%;
   }
@@ -240,6 +244,9 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .w-48 {
+    width: calc(var(--spacing) * 48);
   }
   .w-\[30\%\] {
     width: 30%;
@@ -290,8 +297,26 @@
   .bg-purple-900 {
     background-color: var(--color-purple-900);
   }
+  .bg-red-600 {
+    background-color: var(--color-red-600);
+  }
   .bg-slate-700 {
     background-color: var(--color-slate-700);
+  }
+  .bg-\[url\(https\:\/\/i\.pinimg\.com\/originals\/3b\/16\/6d\/3b166d87ffa3e065d03e0c34e42e1281\.jpg\)\] {
+    background-image: url(https://i.pinimg.com/originals/3b/16/6d/3b166d87ffa3e065d03e0c34e42e1281.jpg);
+  }
+  .bg-contain {
+    background-size: contain;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -324,11 +349,35 @@
       }
     }
   }
+  .hover\:bg-\[url\(https\:\/\/preview\.redd\.it\/perhaps-fionas-ogre-form-shouldve-been-less-pretty-caused-v0-hm4iavs2foee1\.jpeg\?auto\=webp\&s\=5a9a541014ef1fff353151bbd8a06a7b98d6243a\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-image: url(https://preview.redd.it/perhaps-fionas-ogre-form-shouldve-been-less-pretty-caused-v0-hm4iavs2foee1.jpeg?auto=webp&s=5a9a541014ef1fff353151bbd8a06a7b98d6243a);
+      }
+    }
+  }
+  .hover\:bg-\[url\(https\:\/\/static\.wikia\.nocookie\.net\/hero2\/images\/f\/fd\/Princesa_Fiona_\%28Ogress\%29\.png\/revision\/latest\?cb\=20190916025113\&path-prefix\=es\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-image: url(https://static.wikia.nocookie.net/hero2/images/f/fd/Princesa_Fiona_%28Ogress%29.png/revision/latest?cb=20190916025113&path-prefix=es);
+      }
+    }
+  }
   .hover\:text-red-700 {
     &:hover {
       @media (hover: hover) {
         color: var(--color-red-700);
       }
+    }
+  }
+  .active\:bg-green-900 {
+    &:active {
+      background-color: var(--color-green-900);
+    }
+  }
+  .active\:bg-\[url\(https\:\/\/i\.pinimg\.com\/564x\/5b\/47\/22\/5b4722ec6103e5c34254f45e071d4cf0\.jpg\)\] {
+    &:active {
+      background-image: url(https://i.pinimg.com/564x/5b/47/22/5b4722ec6103e5c34254f45e071d4cf0.jpg);
     }
   }
 }
