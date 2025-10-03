@@ -39,28 +39,63 @@
         </svg>
       </button>
     </header>
-    <main class="flex flex-col md:flex-row-reverse p-4">
+    <main class="flex flex-col md:flex-row-reverse">
       <div
         class="flex flex-col p-4 bg-orange-300 dark:bg-slate-500 dark:text-white md:w-[80%] md:h-full lg:w-[70%]"
       >
-        <div
-          class="bg-white flex items-center justify-center border border-gray-400 w-56 rounded-2xl"
-        >
-          <input type="text" class="w-[80%] outline-none" />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
+        <div class="flex items-center justify-around w-full">
+          <div
+            class="bg-white flex items-center justify-center border border-gray-400 w-56 rounded-2xl"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-            />
-          </svg>
+            <input type="text" class="w-[80%] outline-none" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </div>
+          <select name="" id="" class="bg-white px-2 border border-gray-400">
+            <option value="">terror</option>
+            <option value="">novelas ligeras</option>
+            <option value="">comics</option>
+            <option value="">ciencia ficcion</option>
+          </select>
+        </div>
+        <div
+          class="cards-container w-full flex flex-col items-center justify-center py-4 gap-4"
+        >
+          <div
+            class="card w-[75%] flex flex-col justify-center bg-blue-900 text-white p-4 rounded-2xl"
+          >
+            <div class="w-full flex flex-col gap-2 items-center justify-center">
+              <h2 class="text-2xl font-bold">Harry Potter</h2>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrtzNUJt35DyuAgsVnUrYvL-egZ99Zr_QPtI50qjp4GN4HxUUacICbWu4tauagE5Mp4rA&usqp=CAU"
+                alt="imagen del libro"
+              />
+            </div>
+            <p>
+              genero:Fantasia <br />
+              autor:J. K. Rowling <br />
+              año:1997 <br />
+            </p>
+            <div class="w-full flex items-center justify-center">
+              <button
+                class="bg-green-950 text-yellow-900 py-2 px-8 rounded-2xl hover:bg-green-800 font-bold"
+              >
+                $20.00
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="h-[20%] sm:flex md:flex-col md:h-full md:w-[20%] lg:w-[30%]">
