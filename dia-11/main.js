@@ -120,7 +120,12 @@ edad >= 18
    Muestra en consola su suma, resta, multiplicación y división.
 */
 // RESPUESTA AQUÍ 👇
-
+let aa = 123;
+let bb = 322;
+console.log(aa + bb);
+console.log(aa - bb);
+console.log(aa * bb);
+console.log(aa / bb);
 /*
 2. Calcula el área de un rectángulo (base * altura).
    Muestra el resultado en consola.
