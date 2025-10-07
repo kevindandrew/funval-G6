@@ -136,7 +136,8 @@ console.log(aa / bb);
 3. Calcula el área de un triángulo usando la fórmula (base * altura) / 2.
 */
 // RESPUESTA AQUÍ 👇
-
+let tarzan = 22;
+console.log(tarzan);
 /*
 4. Calcula el módulo (resto) de dividir 25 entre 4.
    Usa el operador %.
@@ -259,60 +260,60 @@ console.log(aa / bb);
 21. Declara dos números y muestra su suma.
     Luego, verifica si el resultado es mayor que 50.
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇  BOREN
 
 /*
 22. Declara tres notas (nota1, nota2, nota3).
     Calcula el promedio y muestra si aprobó (promedio >= 60).
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇  JAIME
 
 /*
 23. Declara nombre y edad.
     Muestra un mensaje como:
     "Hola Kevin, tienes 20 años. ¿Eres mayor de edad? true"
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇  GERARDO
 
 /*
 24. Declara precioProducto y dineroDisponible.
     Muestra si puedes comprar el producto (dineroDisponible >= precioProducto).
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇   IBRAIM
 
 /*
 25. Declara base y altura.
     Calcula el área de un triángulo (base * altura) / 2.
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇  JORGE
 
 /*
 26. Declara edad, tieneCedula y tienePasaje.
     Usa operadores lógicos para saber si puede viajar.
     (edad >= 18 && tieneCedula && tienePasaje)
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇    BELEN
 
 /*
 27. Declara saldo = 100 y gasto = 30.
     Usa operadores de asignación para restar el gasto y mostrar el nuevo saldo.
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇 EDMUND
 
 /*
 28. Declara a = 10, b = 5.
     Muestra si la suma es par o impar (usa %).
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇   EMANUEL
 
 /*
 29. Declara usuario = "Kevin" y password = "1234".
     Usa && para verificar si ambos son correctos.
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇   IGNACIO
 
 /*
-30. Ejercicio Final:
+30. Ejercicio Final:        ALFREDO
     Declara tus datos y calcula tu promedio.
     Luego, muestra un mensaje completo.
 
