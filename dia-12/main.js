@@ -112,7 +112,7 @@ console.log(resultadoCliente);
  */
 
 /* ----------------SWICH CASE---------- */
-let mesesillo = parseInt(prompt("ingresa el mes de nacimiento"));
+/* let mesesillo = parseInt(prompt("ingresa el mes de nacimiento"));
 switch (mesesillo) {
   case 1:
     console.log("enero");
@@ -154,7 +154,7 @@ switch (mesesillo) {
     console.log("numero incorrecto");
     break;
 }
-
+ */
 /* ----------------------------------------------------------------------- */
 // =======================================================
 // IF SIMPLE (EJERCICIOS 1 - 5)
@@ -332,7 +332,24 @@ switch (mesesillo) {
    Usa if-else para mostrar si su suma es par o impar.
 */
 // RESPUESTA AQUÍ 👇
+/* let pepito = "estudiante funval";
+let cadenaMensaje = `hola ${pepito}`;
+let cadena = "hola " + pepito; */
 
+/* let numer1 = parseInt(
+  prompt(`MENU DE OPCIONES
+OPCION 1
+OPCION 2
+OPCION 3
+`)
+);
+let numer2 = parseInt(prompt("ingresa el 2do numero"));
+let resultado = numer1 + numer2;
+if (resultado % 2 === 0) {
+  console.log("es par");
+} else {
+  console.log("es impar");
+} */
 /*
 24. Pide tres notas, calcula el promedio.
    Usa if-else-if para mostrar:
@@ -340,7 +357,7 @@ switch (mesesillo) {
    - "Aprobado" si es mayor o igual a 60
    - "Reprobado" si es menor a 60
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇 DAVID
 
 /*
 25. Pide nombre y edad.
@@ -348,37 +365,42 @@ switch (mesesillo) {
    - "Hola [nombre], eres mayor de edad"
    - Si tiene 60 o más, agrega también "y adulto mayor"
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇 BOREN
 
 /*
 26. Pide un número del 1 al 5 y usa switch para mostrar una calificación:
    1 = Muy malo, 2 = Malo, 3 = Regular, 4 = Bueno, 5 = Excelente.
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇 GERARDO
 
 /*
 27. Pide una letra y determina si es vocal o consonante usando switch.
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇  JAIME
 
 /*
 28. Pide dos números y una operación ("sumar", "restar", "multiplicar", "dividir").
    Usa switch para realizar la operación correspondiente.
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇   IBRAIM
 
 /*
 29. Pide edad y país.
    Si el país es "Bolivia" y la edad es mayor o igual a 18, muestra "Puede votar".
    Caso contrario, muestra "No puede votar".
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇  MOISES
 
+let nombrePais = "Bolivia";
+let cantidadLetras = nombrePais.length;
+let letrita = nombrePais[6];
+console.log(letrita);
+console.log(cantidadLetras);
 /*
 30. Pide tres números.
    Determina cuál es el mayor de los tres usando if-else-if.
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇 EDMUND
 
 /*
 31. Pide un número y determina:
@@ -386,7 +408,7 @@ switch (mesesillo) {
    - Si es múltiplo de 5 muestra "Buzz"
    - Si es múltiplo de ambos muestra "FizzBuzz"
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇  JORGE
 
 /*
 32. Pide una nota (0 a 100) y muestra:
@@ -396,21 +418,21 @@ switch (mesesillo) {
    "D" si es >= 60
    "F" si es menor de 60
 */ s;
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇 IGNACIO
 
 /*
 33. Pide nombre de usuario y contraseña.
    Si usuario es "Alfredo" o "Moises" y contraseña es "1234",
    muestra "Acceso autorizado", de lo contrario "Denegado".
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇 BELEN
 
 /*
 34. Pide la cantidad de artículos comprados y el precio por unidad.
    Si compró más de 10 artículos, aplica 10% de descuento.
    Muestra el total a pagar.
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇 EMANUEL
 
 /*
 35. Ejercicio Final:
@@ -419,4 +441,4 @@ switch (mesesillo) {
    "Hola [nombre], tienes [edad] años y tu promedio es [promedio]. Aprobado/Reprobado."
    Usa if-else-if o anidado.
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇 ALFREDO
