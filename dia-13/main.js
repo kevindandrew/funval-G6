@@ -203,7 +203,7 @@
    Tienes 3 intentos para ingresar correctamente usuario="admin" y contraseña="1234".
    Si falla los 3 intentos, muestra "Acceso bloqueado".
 */
-// RESPUESTA AQUÍ 👇
+// RESPUESTA AQUÍ 👇    kevin :v
 
 /*
 38. Pide 5 números y calcula su suma total y promedio.
