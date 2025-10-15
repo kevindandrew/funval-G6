@@ -67,6 +67,11 @@ let numeros = [5, 10, 15, 20];
 
 // Tu código aquí 👇
 // numeros.forEach( ... )
+let resultado = 0;
+numeros.forEach((numerito) => {
+  resultado += numerito;
+});
+console.log(resultado);
 
 //  EJERCICIO 3: Mostrar índice y valor
 // Dado un array de frutas, usa forEach para mostrar en consola:
@@ -75,3 +80,38 @@ let frutitas = ["Manzana", "Banana", "Pera", "Sandía"];
 
 // Tu código aquí 👇
 // frutas.forEach( ... )
+frutitas.forEach((itemFruta, indice, array) => {
+  console.log(
+    `En la posición ${indice} está la fruta ${itemFruta} el array es ${array}`
+  );
+});
+/* --------------------MAP--------------------------------------------------le */
+
+let notasFunval = [35, 78, 22, 51, 67, 34, 98, 71];
+
+let arrayNuevo = notasFunval.map((nota) => {
+  if (nota >= 51) {
+    return nota;
+  } else {
+    return "no es mayor a 51";
+  }
+});
+
+console.log(arrayNuevo);
+
+let estudiantesFunval = [
+  "DAVID",
+  "BOREN",
+  "JOSE PELICO",
+  "MOISES",
+  "BELEN",
+  "BOREN",
+  "EDMUND",
+  "JOSE PELICO",
+  "JOSE PELICO",
+  "ALFREDO",
+];
+/* 
+    utilizar map para q en los lugares donde Jose Pelico puso su nombre
+    puedan cambiarlo x estudiante no registrado
+*/
