@@ -61,7 +61,7 @@ let matrizEstudiantes = [
 for (let i = 0; i < matrizEstudiantes.length; i++) {
   //console.log(matrizEstudiantes[i]);
   for (let j = 0; j < matrizEstudiantes[i].length; j++) {
-    console.log(matrizEstudiantes[i][j]);
+    // console.log(matrizEstudiantes[i][j]);
   }
 }
 
@@ -73,21 +73,54 @@ for (let i = 0; i < matrizEstudiantes.length; i++) {
 /* ---------------------EJERCICIOS----------------------------------- */
 // 1. Crea un array con 5 nombres y muestra el primero y el último elemento en consola.
 let nombres = ["Juan", "Pedro", "Carlos", "Martin", "Fernando"];
-console.log(nombres[0]);
-console.log(nombres[nombres.length - 1]);
+/* console.log(nombres[0]);
+console.log(nombres[nombres.length - 1]); */
 
 // 2. Agrega un elemento al final del array usando push y muestra el nuevo array.
 // 3. Quita el último elemento usando pop y muestra el elemento eliminado y el array final.
+let ultimo = nombres.pop();
+console.log(ultimo);
+console.log(nombres);
 // 4. Agrega un elemento al inicio del array usando unshift y muestra el resultado.
 // 5. Elimina el primer elemento con shift y muestra el elemento eliminado.
+let primero = nombres.shift();
+console.log(primero);
 // 6. Crea un array de números y muestra cuántos elementos tiene con length.
 // 7. Recorre un array de frutas con un bucle for y muestra cada fruta en consola.
+let canastaFrutas = ["naranja", "banana", "sandia"];
+for (let i = 0; i < canastaFrutas.length; i++) {
+  console.log(canastaFrutas[i]);
+}
 // 8. Recorre un array de números con for of y muestra el doble de cada número.
 // 9. Crea un array de colores y muestra el índice y el valor de cada elemento usando for.
+let colores = ["rojo", "azul", "verde", "morado", "amarillo"];
+
+for (let j = 0; j < colores.length; j++) {
+  console.log("el indice es: " + j + " y el valor q tiene es: " + colores[j]);
+}
 // 10. Crea un array vacío y agrega 5 elementos con push dentro de un bucle for.
 // 11. Crea un array de 5 números y suma todos sus valores usando un bucle for.
+let numeritos = [322, 89, 15, 4, 2025];
+let respuesta = 0;
+for (let i = 0; i < numeritos.length; i++) {
+  respuesta += numeritos[i];
+}
+console.log(respuesta);
 // 12. Crea un array de palabras y cuenta cuántas tienen más de 4 letras.
 // 13. Crea un array con nombres y verifica si existe un nombre específico recorriéndolo.
+
+nombres = ["kevin", "mario", "hugo", "hernan", "ramiro"];
+let pepe = false;
+for (let i = 0; i < nombres.length; i++) {
+  if (nombres[i] === "kevin") {
+    pepe = true;
+  }
+}
+if (pepe) {
+  console.log("el nombre esta aqui");
+} else {
+  console.log("el nombre no fue encontrado");
+}
 // 14. Crea un array con edades y muestra solo las edades mayores a 18.
 // 15. Crea un array de números y crea un nuevo array con el triple de cada número.
 // 16. Crea un array de precios y calcula el total sumando todos sus elementos.
@@ -105,3 +138,28 @@ console.log(nombres[nombres.length - 1]);
 // 28. Crea un array de frutas y cambia el valor de la segunda fruta por otra nueva.
 // 29. Crea un array con 5 números y muestra solo los que estén en posiciones pares.
 // 30. Crea un array con nombres y forma una cadena con todos los nombres separados por coma.
+/* ------------------------------------------------------------------------ */
+// 1. Crea un array con varios números y muestra cuántos de ellos son pares y cuántos son impares.
+
+// 2. Crea un array con nombres y cuenta cuántas veces se repite un nombre específico.
+
+// 3. Crea un array de números y encuentra el número mayor y el menor recorriéndolo con un bucle for.
+
+// 4. Crea un array con números y elimina los números repetidos dejando solo uno de cada valor (sin usar Set).
+
+// 5. Crea una matriz 3x3 con números y calcula la suma total de todos los elementos.
+
+// 6. Crea una matriz 3x3 y muestra la suma de cada fila por separado (ejemplo: “Fila 1: 10”, etc.).
+
+// 7. Crea una matriz 3x3 con números y muestra todos los valores de la diagonal principal.
+
+// 8. Crea un array con nombres y genera un nuevo array con todos los nombres en mayúsculas usando un bucle.
+
+// 9. Crea una matriz 2x3 con números y muestra todos los números mayores a 10.
+
+// 10. Crea un array bidimensional (matriz) 3x3 con cualquier valor.
+//     Pide una posición (fila y columna) y muestra el valor que está en esa posición.
+
+// 11. Crea un array de 8 números y genera un nuevo array con solo los números que sean múltiplos de 3.
+
+// 12. Crea una matriz 3x3 con números y cuenta cuántos números son pares y cuántos impares dentro de ella.
