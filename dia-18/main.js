@@ -61,3 +61,17 @@ estudiantes.forEach(mostrar);
 estudiantes.forEach((estudianteItem) => {
   console.log(estudianteItem);
 });
+//  EJERCICIO 2: Sumar números
+// Dado un array de números, usa forEach para sumar todos los valores y mostrar el resultado final en consola.
+let numeros = [5, 10, 15, 20];
+
+// Tu código aquí 👇
+// numeros.forEach( ... )
+
+//  EJERCICIO 3: Mostrar índice y valor
+// Dado un array de frutas, usa forEach para mostrar en consola:
+// "En la posición X está la fruta Y"
+let frutitas = ["Manzana", "Banana", "Pera", "Sandía"];
+
+// Tu código aquí 👇
+// frutas.forEach( ... )
