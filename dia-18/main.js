@@ -115,3 +115,49 @@ let estudiantesFunval = [
     utilizar map para q en los lugares donde Jose Pelico puso su nombre
     puedan cambiarlo x estudiante no registrado
 */
+let numeroPrimos = [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 13, 15, 17, 19];
+/* 
+    x error el profesor Kevin creo una lista de numeros primos pero algunos numeros
+    se infiltraron a la lista cambiar los numeros q no son primos x el numero 1 para q todos
+    los numeros sean primos
+*/
+
+/* -------------------FILTER------------------------------ */
+notasFunval = [35, 78, 22, 51, 67, 34, 98, 71];
+
+let notasResultado = notasFunval.filter((nota) => nota % 2 === 0);
+console.log(notasResultado);
+
+let marcas = [
+  "toyota",
+  "samsung",
+  "lg",
+  "sony",
+  "paramount",
+  "adidas",
+  "nike",
+  "funval",
+];
+/* 
+    crear una lista nueva con las marcas q tengan mas de 4 letras 
+*/
+/* ------------------FIND------------------------- */
+
+let controllers = ["JOSE", "DIEGO", "JUAN", "JOSE", "MARIO", "MARCOS"];
+
+let encontrado = controllers.find((controller) => controller === "kevin");
+console.log(encontrado);
+/* -----------------findIndex----------------------- */
+let indice = controllers.findIndex((controller) => controller === "JOSE");
+console.log(indice);
+/* -------------SOME------------------------------ */
+let esta = controllers.some((con) => con === "DAVID");
+console.log(esta);
+/* ---------------uninedo metodos---------------- */
+let edades = [35, 78, 22, 18, 55, 52, 33, 37, 41];
+
+let arrayResultante = edades
+  .map((edad) => edad * 3)
+  .filter((edadItem) => edadItem % 2 === 0)
+  .some((item) => item === 66);
+console.log(arrayResultante);
