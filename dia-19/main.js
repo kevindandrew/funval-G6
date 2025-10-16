@@ -3,33 +3,33 @@
 console.log(superTitulo);
 superTitulo.textContent = "HOLA AMIGOS DE FUNVAL"; */
 /* ------------SELECIONADORES DE ELEMENTOS-------------------- */
-let selecion1 = document.getElementById("titulo"); //RETORNA 1 SOLO ELEMENTO
+/* let selecion1 = document.getElementById("titulo"); //RETORNA 1 SOLO ELEMENTO
 let selecion2 = document.getElementsByClassName("titu"); // RETORNA UNA LISTA DE ELEMENTOS
 let selecion3 = document.getElementsByTagName("h1"); // RETORNA UNA LISTA DE ELEMENTOS
 let selecion4 = document.querySelector("#titulo"); // RETORNA EL PRIMER ELEMENTO Q COINICDA CON ESE CRITERIO
-let selecion5 = document.querySelectorAll(".titu"); //RETORNA UNA LISTA DE ELEMENTOS
-console.log(selecion1);
+let selecion5 = document.querySelectorAll(".titu"); //RETORNA UNA LISTA DE ELEMENTOS */
+/* console.log(selecion1);
 console.log(selecion2);
 console.log(selecion3);
 console.log(selecion4);
-console.log(selecion5);
+console.log(selecion5); */
 /* -----------MODIFICAMDO EL TEXTO----------------------- */
-selecion4.textContent = "Kevin";
+/* selecion4.textContent = "Kevin"; */
 /* -----------MODIFICADOR DE CSS-----------------------------*/
 //selecion4.style.backgroundColor = "red";
-selecion4.style.fontSize = "100px";
+/* selecion4.style.fontSize = "100px"; */
 /* --------------MODIFICADOR DE CLASES-------------------*/
-selecion4.classList.add("p-4", "text-blue-500", "bg-slate-900");
+/* selecion4.classList.add("p-4", "text-blue-500", "bg-slate-900"); */
 /* -----------------modificando ATRIBUTOS----------------------- */
-let imagenSud = document.querySelector("#imagen");
+/* let imagenSud = document.querySelector("#imagen");
 imagenSud.setAttribute(
   "src",
   "https://discursosud.com/wp-content/uploads/2023/08/jesus.jpg"
 );
 imagenSud.setAttribute("width", "100px");
-console.log(imagenSud.getAttribute("alt"));
+console.log(imagenSud.getAttribute("alt")); */
 /* -----------------MODIFICACION DE TODO EL HTML INTERIOR------------------ */
-let contenedor = document.querySelector("#contenedor-card");
+/* let contenedor = document.querySelector("#contenedor-card");
 contenedor.innerHTML = `
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
@@ -48,4 +48,64 @@ contenedor.innerHTML = `
         </a>
     </div>
 </div>
+`; */
+/* --------------CREAR ELEMENTOS O NODOS PARA PODER INSERTARLOS ------------------------------ */
+/* let ul = document.createElement("ul");
+let li1 = document.createElement("li");
+let li2 = document.createElement("li");
+let li3 = document.createElement("li");
+li1.textContent = "Boren";
+li2.textContent = "David";
+li3.textContent = "Alfredo";
+ul.append(li1, li2, li3);
+contenedor.appendChild(ul); */
+/* -------------------------------------------------------------------------------------------- */
+let estudiantesFunval = [
+  {
+    nombre: "Alfredo",
+    pais: "Mexico",
+    edad: 28,
+  },
+  {
+    nombre: "Belen",
+    pais: "Bolivia",
+    edad: 28,
+  },
+  {
+    nombre: "Boren",
+    pais: "colombia",
+    edad: 28,
+  },
+  {
+    nombre: "David",
+    pais: "Chile",
+    edad: 28,
+  },
+  {
+    nombre: "Ibraim",
+    pais: "Mexico",
+    edad: 28,
+  },
+  {
+    nombre: "Moises",
+    pais: "Bolivia",
+    edad: 28,
+  },
+];
+let contendor = document.querySelector("#contenedor-estudiantes");
+
+estudiantesFunval.forEach((estudiante) => {
+  contendor.innerHTML += `
+    <a href="#" class="block max-w-sm p-6 bg-blue-500 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${estudiante.nombre}</h5>
+    <p class="font-normal text-gray-700 dark:text-gray-400">Pais: ${estudiante.pais} - Edad: ${estudiante.edad}</p>
+    </a>
 `;
+});
+
+/* 
+    el profesor kevin necesita ver la lista de estudiantes en una tabla 
+    q tendra las siguientes columnas
+    nombre edad y pais crear una tabla de forma dinamica q cargue los datos 
+    de los objetos de la lista estudiantes Funval
+*/
