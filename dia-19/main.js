@@ -65,48 +65,60 @@ let estudiantesFunval = [
     nombre: "Alfredo",
     pais: "Mexico",
     edad: 28,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS3jA3MbwHowvop3NIg0qJdTX9huIxgOgTXw&s",
   },
   {
     nombre: "Belen",
     pais: "Bolivia",
     edad: 28,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpMRLJrOZsQ0jHtal6W9cNJv-FpmVwl10Uug&s",
   },
   {
     nombre: "Boren",
     pais: "colombia",
     edad: 28,
+    img: "https://i.pinimg.com/236x/7f/f8/65/7ff8652de53c4e699ded5b5abd110282.jpg",
   },
   {
     nombre: "David",
     pais: "Chile",
     edad: 28,
+    img: "https://i.etsystatic.com/19304061/r/il/8de4b1/2643592446/il_570xN.2643592446_czun.jpg",
   },
   {
     nombre: "Ibraim",
     pais: "Mexico",
     edad: 28,
+    img: "https://i.etsystatic.com/10837499/r/il/b87e98/2725017395/il_570xN.2725017395_htfd.jpg",
   },
   {
     nombre: "Moises",
     pais: "Bolivia",
     edad: 28,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9IVN9brixm_O6mtZmKAYMRv3w1BJy74QEpw&s",
   },
   {
     nombre: "job",
     pais: "Bolivia",
     edad: 28,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd4O4gtgVmIHxbH-F1EGt93RNIR_uhcFhnrQ&s",
   },
 ];
-/* let contendor = document.querySelector("#contenedor-estudiantes");
+let contendor = document.querySelector("#contenedor-estudiantes");
 
 estudiantesFunval.forEach((estudiante) => {
   contendor.innerHTML += `
-    <a href="#" class="block max-w-sm p-6 bg-blue-500 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${estudiante.nombre}</h5>
-    <p class="font-normal text-gray-700 dark:text-gray-400">Pais: ${estudiante.pais} - Edad: ${estudiante.edad}</p>
-    </a>
+    
+<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="${estudiante.img}" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${estudiante.nombre}</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">edad:${estudiante.edad}-pais:${estudiante.pais}</p>
+    </div>
+</a>
+
 `;
-}); */
+});
 
 /* 
     el profesor kevin necesita ver la lista de estudiantes en una tabla 
@@ -115,7 +127,7 @@ estudiantesFunval.forEach((estudiante) => {
     de los objetos de la lista estudiantes Funval
 */
 
-let tabla = document.querySelector("#cuerpo-tabla");
+/* let tabla = document.querySelector("#cuerpo-tabla");
 
 estudiantesFunval.forEach((est) => {
   if (est.nombre.length >= 5) {
@@ -146,4 +158,4 @@ estudiantesFunval.forEach((est) => {
             </td>
           </tr>`;
   }
-});
+}); */
