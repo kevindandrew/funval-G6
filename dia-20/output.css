@@ -100,6 +100,7 @@
     --leading-normal: 1.5;
     --radius-sm: 0.25rem;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -520,6 +521,9 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
   .rounded-t-lg {
     border-top-left-radius: var(--radius-lg);
     border-top-right-radius: var(--radius-lg);
@@ -583,6 +587,12 @@
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
   }
   .bg-gray-500 {
     background-color: var(--color-gray-500);
@@ -679,6 +689,12 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -781,6 +797,9 @@
   .text-\[\#1b1b1b\] {
     color: #1b1b1b;
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-blue-500 {
     color: var(--color-blue-500);
   }
@@ -861,6 +880,24 @@
     &:is(:where(.peer):checked ~ *) {
       --tw-gradient-to: var(--color-indigo-500);
       --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+  }
+  .selection\:border {
+    & *::selection {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+    &::selection {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .selection\:border-gray-500 {
+    & *::selection {
+      border-color: var(--color-gray-500);
+    }
+    &::selection {
+      border-color: var(--color-gray-500);
     }
   }
   .after\:absolute {
@@ -1049,6 +1086,17 @@
       @media (hover: hover) {
         text-decoration-line: underline;
       }
+    }
+  }
+  .focus\:border {
+    &:focus {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .focus\:border-gray-500 {
+    &:focus {
+      border-color: var(--color-gray-500);
     }
   }
   .focus\:border-green-500 {
