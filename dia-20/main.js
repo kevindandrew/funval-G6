@@ -52,3 +52,13 @@ form.addEventListener("submit", (e) => {
   let mensaje = `bienvenido ${nombreEstudiante} del pais de: ${pais} de edad:${edad}`;
   console.log(mensaje);
 });
+/* 
+        una casa de cambio neceista realizar un formulario q pueda mostrar
+        a sus clientes q estan de viaje cuanto seria la conversion de la moneda
+        la casa de cambio trabaja en 3 paises Peru Chile y en Argentina
+        si un cliente de chile se va para ARGENTINA MOSTRAR la cantidad de dinero q tendria alla
+        nombre
+        pais de origen    dropdown
+        pais destino       dropdown
+        la cantidad de dinero q tiene 
+*/
