@@ -109,3 +109,57 @@ tiendaPC.forEach(
           </tr>`;
   }
 );
+
+/* -------------------SPREAD OPERATOR------------------------------------ */
+//CUANDO QUEREMOS CREAR UNA COPIA DE UN ARRAY O UN OBJETO
+//CUANDO APARTIR DE UN OBJETO O UN ARRAY QUEREMOS CREAR UNO NUEVO CON ALGUNOS ATRIBUTOS ADICIONALES
+//CUANDO QUEREMOS UNIR O FUSIONAR 2 O MAS OBJETOS O ARRAYS EN UN SOLO
+/* ---------------------ARRAYS------------------------------------------ */
+let frutas = ["naranja", "papaya", "palta", "sandia", "manzana"];
+let copiaFrutas = [...frutas];
+
+/* --------------------------------------------------------------------- */
+let frutasCaras = [...frutas, "chirimoya", "igo", "ciruela"];
+console.log(frutasCaras);
+/* ------------------------------------------------------------------ */
+let est = ["Jaime", "Alfredo", "Moises"];
+let fusion = [...est, ...frutas, "Kevin", ...frutasCaras];
+console.log(fusion);
+/* ------------------OBJETOS-------------------------------- */
+let humano = {
+  nombre: "peter parker",
+  edad: 22,
+  pais: "ESTADOS UNIDOS",
+};
+let copiaObjeto = { ...humano };
+console.log(copiaObjeto);
+/* ------------------------------------------------------------ */
+let superHero = {
+  ...humano,
+  superNombre: "Spiderman",
+  poder: "sentido araña",
+  fuerza: 80,
+};
+console.log(superHero);
+/* ----------------------------------------------------------- */
+let hero = {
+  nombre: "steve rogers",
+  nombreSuper: "Capitan America",
+  fuerza: 90,
+};
+let AgenteShield = {
+  nombre: "Nick Fury",
+  arma: "cañon",
+  nivel: "capitan",
+  fuerza: 10,
+};
+let superFusion = {
+  ...hero,
+  ...AgenteShield,
+};
+
+console.log(superFusion);
+/* 
+        quiero q ustedes creen un objeto puedan copiarlo crear una version 
+        mejorada del objeto y fusionarlo con otro objeto
+*/
