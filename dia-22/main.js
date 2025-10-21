@@ -15,3 +15,7 @@ listado.addEventListener("click", (e) => {
     padre.remove();
   }
 });
+/* 
+    realizar del listado de tareas un botoncito adicional q indique q la tarea 
+    esta en progreso cambiando el color de fondo a un amarillo
+*/
